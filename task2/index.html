@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sculpture Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="grid-item">
+            <h2>Welcome to the Isaac Mkhwanazi
+  Art Gallery</h2>
+            <p>Through his art, Isaac aspires to capture the ineffable and communicate the profound. He is an explorer of emotions, a dreamer in the world of abstract forms, and his work stands as a testament to the powerful language of abstract art.</p>
+        </section>
+
+        <section id="gallery" class="grid-item">
+            <h2>Collection</h2>
+            <div class="gallery-grid">
+                <img src="https://res.cloudinary.com/dwot0ad2w/image/upload/w_1000,ar_18:9,c_fill,g_auto,e_sharpen/v1731167781/is1_ibltkq.jpg" alt="is1_ibltkq">
+                <img src="https://res.cloudinary.com/dwot0ad2w/image/upload/w_1000,ar_18:9,c_fill,g_auto,e_sharpen/v1731169085/download_mleb1l.jpg" alt="Sculpture 2">
+                <img src="https://res.cloudinary.com/dwot0ad2w/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731169733/download1_usuf7o.jpg" alt="Sculpture 3">
+                <img src="https://res.cloudinary.com/dwot0ad2w/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731170113/20220810_111556-scaled-1-300x394_ferca5.jpg" alt="Sculpture 4">
+                <img src="https://res.cloudinary.com/dwot0ad2w/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731170522/IM54-scaled-1-300x197_o31uo8.jpg" alt="Sculpture 5">
+                <img src="https://res.cloudinary.com/dwot0ad2w/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1731170930/IM372-300x297_ytdtq2.jpg" alt="Sculpture 6">
+            </div>
+        </section>
+        
+        
+            </div>
+        </section>
+        <h2>To-Do List</h2>
+        <input type="text" id="todoInput" placeholder="Add a new task">
+        <button onclick="addTodo()">Add Task</button>
+        <ul id="todoList"></ul>
+
+        <section id="contact" class="grid-item">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="password" id="password" placeholder="Create Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="imageSection" class="grid-item" style="display:none;">
+            <h2>Submit an Image</h2>
+            <form id="imageForm">
+                <input type="url" id="imageUrl" placeholder="Paste Image URL" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="imagePreview" style="margin-top: 20px;">
+                <!-- The image will be displayed here after submission -->
+            </div>
+        </section>
+    
+
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
